@@ -14,6 +14,10 @@
 
 </div>
 
+**在找 CLAUDE.md / AGENTS.md 规则模板？** AndySoul 是一份可以直接放进项目根目录的规则文件。Claude Code 读 `CLAUDE.md`，Codex 读 `AGENTS.md`，Cursor 读 `.cursorrules`，同一份内容下载成对应的文件名就能用。
+
+*English: a drop-in CLAUDE.md / AGENTS.md / .cursorrules rules template that helps Claude Code, Codex and Cursor make fewer mistakes.*
+
 ## 30 秒装上
 
 ```bash
@@ -98,11 +102,48 @@ AI："我会添加邮箱/密码验证。计划：
 
 [![Star History Chart](https://api.star-history.com/svg?repos=AIPMAndy/AndySoul&type=Date)](https://star-history.com/#AIPMAndy/AndySoul&Date)
 
-## 作者
+## 常见问题 FAQ
 
-**AI 酋长 Andy**，前腾讯 / 百度 AI 产品专家、大模型独角兽 VP。也写了 [DNA Memory](https://github.com/AIPMAndy/dna-memory)（多个 Agent 共用的本地记忆层）和 [Grok Bot 中文攻略](https://aipmandy.github.io/grok-bot-handbook/)。
+### CLAUDE.md 和 AGENTS.md 有什么区别？
 
-想交流 Agent 技术和落地：微信 **`AIPMAndy`**（备注「AndySoul」）· [X @AIPMAndy](https://x.com/AIPMAndy) · [Telegram @AIPMAndy](https://t.me/AIPMAndy) · [个人官网](https://metaver.vip/)
+Claude Code 读取 `CLAUDE.md`，OpenAI Codex 读取 `AGENTS.md`，Cursor 读取 `.cursorrules`。AndySoul 三处用的是同一份内容，按上面的命令下载成对应的文件名就行。
+
+### 装上以后 AI 会有什么变化？
+
+它会先说计划，只改你要求的部分，每一步都验收，不确定就问你。[EXAMPLES.md](./EXAMPLES.md) 里有 5 组前后对比。
+
+### 这些规则的依据是什么？
+
+9 条认知公理、马斯克 5 步工程法和 Karpathy 4 条编码原则。
+
+### 能按我自己的项目改吗？
+
+能。[TEMPLATES.md](./TEMPLATES.md) 里有极简版、全栈版、数据密集型、创业 MVP 等场景模板。保留适合你的部分，再加上你自己的技术栈和项目规则。
+
+### 免费吗？
+
+免费，MIT 许可，可以自由使用和修改。
+
+<!-- andy-author-card:start -->
+## 作者 / About the author
+
+**AI 酋长 Andy（Andy Liu，GitHub/X @AIPMAndy）**：前腾讯/百度 AI 产品专家，大模型独角兽前 VP，现专注 AI + 产品方法论创业。
+
+可以找我聊求职咨询、AI 增长和副业陪跑，服务范围和费用先沟通确认。
+
+微信 `AIPMAndy`（备注「AndySoul」）· [X @AIPMAndy](https://x.com/AIPMAndy) · [Telegram @AIPMAndy](https://t.me/AIPMAndy) · [个人官网 metaver.vip](https://metaver.vip/) · [Grok Bot 中文攻略](https://aipmandy.github.io/grok-bot-handbook/)
+
+*AI Chief Andy (Andy Liu, @AIPMAndy on GitHub and X) is a former Tencent and Baidu AI product expert and former VP at an LLM unicorn, now a serial entrepreneur focused on AI and product methodology.*
+
+### 作者的其他项目
+
+- [DNA Memory](https://github.com/AIPMAndy/dna-memory)：Claude Code、Codex 共用的本地 AI Agent 记忆 MCP
+- [goskill](https://github.com/AIPMAndy/goskill)：长任务执行助手：先定成功标准，再按标准验收
+- [SafeSkill](https://github.com/AIPMAndy/safeskill)：装 AI Skill 之前，先扫危险命令、提示注入和密钥泄露
+- [Grok Bot 中文攻略](https://github.com/AIPMAndy/grok-bot-handbook)：Grok Bot / AI Agent 中文教程，26 章加 40 套任务指令
+- [OpenClaw Skills 中文精选](https://github.com/AIPMAndy/awesome-openclaw-skills-CN)：2868 个 OpenClaw Skills 分类整理，附国产模型接入指南
+
+<!-- andy-author-card:end -->
 
 ## 许可证
 
