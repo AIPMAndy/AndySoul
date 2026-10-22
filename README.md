@@ -1,138 +1,45 @@
-# AndySoul - AI Agent 核心操作指令
+<div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/AIPMAndy/AndySoul?style=social)](https://github.com/AIPMAndy/AndySoul/stargazers)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+# AndySoul
 
-适用于 AI 编码 Agent（Claude Code、Codex、Cursor 等）的通用行为指南，结合了基础认知公理、马斯克的工程方法论和 Karpathy 的编码原则，旨在最大化执行质量并最小化常见的 LLM 错误。也欢迎加微信AIPMAndy一起探讨Agent技术及应用。
+**一份放进项目根目录的规则文件，让 Claude Code、Codex、Cursor 少犯常见错误。**
 
-**适用于：Claude Code、OpenAI Codex、Cursor 以及任何读取项目指令的 AI Agent。**
+先想清楚再写代码 · 只改该改的地方 · 每一步都验收 · 不确定就直说
 
-**[中文](./README.md) | [English](./README_EN.md)**
+[![License: MIT](https://img.shields.io/badge/License-MIT-111827?style=flat-square)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/AIPMAndy/AndySoul?style=flat-square&color=111827)](https://github.com/AIPMAndy/AndySoul/stargazers)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-111827?style=flat-square)](https://github.com/AIPMAndy/AndySoul/pulls)
 
-## 这是什么
+简体中文 · [English](./README_EN.md) · [模板](./TEMPLATES.md) · [前后对比示例](./EXAMPLES.md)
 
-一套**通用配置文件**，让 AI 编码 Agent：
-- 从第一性原理思考，而非表面类比
-- 在实现前质疑需求
-- 编写最小化、外科手术式的代码变更
-- 系统性验证结果
-- 透明地处理不确定性
+</div>
 
-**兼容平台：**
-- 🤖 **Claude Code**（通过 `CLAUDE.md`）
-- 🔧 **OpenAI Codex**（通过 `.cursorrules` 或系统提示词）
-- ⚡ **Cursor**（通过 `.cursorrules`）
-- 🎯 **任何 AI Agent**（任何读取项目指令的 Agent）
-
-建立在三大支柱之上：
-1. **9 条认知公理**（熵增定律、还原论、概率不确定性等）
-2. **马斯克 5 步工程法**（质疑 → 删除 → 简化 → 加速 → 自动化）
-3. **Karpathy 4 大编码原则**（思考先于编码、简洁优先、外科手术式修改、目标驱动执行）
-
-## 适用人群
-
-**适合你使用，如果你：**
-- 希望 AI Agent 更系统地思考，减少错误
-- 需要透明的推理和明确的不确定性处理
-- 重视最小化、精准的代码变更，而非"改进"
-- 需要目标驱动的执行和可验证的检查点
-- 在数据完整性至关重要的项目上工作
-
-**这不是：**
-- 项目模板（无脚手架、无 CI/CD、无技术栈）
-- 应用框架
-- 领域特定指令的替代品
-
-## 快速开始
+## 30 秒装上
 
 ```bash
-# Claude Code 用户
+# Claude Code
 curl -o CLAUDE.md https://raw.githubusercontent.com/AIPMAndy/AndySoul/main/CLAUDE.md
 
-# Cursor / Codex 用户
-curl -o .cursorrules https://raw.githubusercontent.com/AIPMAndy/AndySoul/main/CLAUDE.md
+# OpenAI Codex（读取 AGENTS.md）
+curl -o AGENTS.md https://raw.githubusercontent.com/AIPMAndy/AndySoul/main/CLAUDE.md
 
-# 或浏览特定场景模板
-curl -O https://raw.githubusercontent.com/AIPMAndy/AndySoul/main/TEMPLATES.md
-```
-
-## 如何使用
-
-### Claude Code
-复制 `CLAUDE.md` 到项目根目录：
-```bash
-curl -o CLAUDE.md https://raw.githubusercontent.com/AIPMAndy/AndySoul/main/CLAUDE.md
-```
-Claude Code 会自动加载。
-
-### Cursor / Codex
-复制为 `.cursorrules`：
-```bash
+# Cursor
 curl -o .cursorrules https://raw.githubusercontent.com/AIPMAndy/AndySoul/main/CLAUDE.md
 ```
 
-### 其他 AI Agent
-复制内容并适配到你的 Agent 配置格式（系统提示词、指令文件等）。
+其他 Agent：把 [`CLAUDE.md`](./CLAUDE.md) 的内容贴进它的系统提示词或项目指令文件。
 
-### 定制化
-编辑文件，添加你的：
-- 技术栈和锁定依赖
-- 项目特定规则和约定
-- 团队工作流和 git 实践
-- 领域知识和边界情况
+## 装上之后有什么不同
 
-文件是模块化的 - 保留适合你工作流的部分，移除不需要的。
+**之前**（常见的 LLM 行为）：
 
-## 文档
-
-- 📖 **[模板集合](./TEMPLATES.md)** - 6 个针对不同场景的预配置模板
-- 💡 **[使用示例](./EXAMPLES.md)** - 前后对比展示真实行为变化
-- 🇨🇳 **[中文文档](./README_CN.md)** - 完整中文文档
-
-## 与众不同之处
-
-大多数提示工程关注"如何编码"。这个关注**"如何思考"** 然后再编码：
-
-1. **认知基础**：基于普世原则（熵、进化、涌现）而非编码惯例
-2. **质疑优先文化**：系统性挑战需求（马斯克方法）
-3. **外科手术式精准**：只触碰必须改变的（Karpathy 原则）
-4. **验证执行**：每一步都有成功标准
-5. **透明的不确定性**：从不猜测或美化数据
-
-## 核心概念
-
-### 第一性原理思维
-剥离惯例和类比。从基本真理（物理、数学、逻辑）推导解决方案。
-
-### 5 步执行优先级
-1. 质疑必要性
-2. 删除非必要项
-3. 简化剩余部分
-4. 加速周期
-5. 最后自动化
-
-### 数据完整性
-- 从不根据不清晰的图像猜测
-- 从不为报告美化数据
-- 始终展示计算过程
-- 立即承认错误
-
-### 外科手术式修改
-- 每行变更都追溯到用户请求
-- 完全匹配现有风格
-- 不"改进"相邻代码
-- 只清理你的修改产生的孤儿代码
-
-## 示例
-
-**之前**（典型 LLM 行为）：
 ```
 用户："给登录表单添加验证"
-AI：[添加验证 + 重构表单 + 更新样式 + 添加未使用的错误状态]
+AI：[添加验证 + 重构表单 + 更新样式 + 添加没用到的错误状态]
 ```
 
-**之后**（使用 AndySoul）：
+**之后**（用 AndySoul）：
+
 ```
 用户："给登录表单添加验证"
 AI："我会添加邮箱/密码验证。计划：
@@ -140,67 +47,65 @@ AI："我会添加邮箱/密码验证。计划：
 2. 显示错误消息 → 测试错误显示
 3. 无效时阻止提交 → 测试提交拦截
 
-我还应该处理边界情况如空字符串吗，还是只做基本格式验证？"
-[只做请求的修改，匹配现有代码风格]
+空字符串这类边界情况要一起处理吗，还是只做基本格式验证？"
+[只改请求的部分，沿用现有代码风格]
 ```
 
-查看 [EXAMPLES.md](./EXAMPLES.md) 了解 5 个详细的前后对比。
+[EXAMPLES.md](./EXAMPLES.md) 里有 5 组详细的前后对比：加登录、修接口超时、数据分析、重构等。
 
-## 权衡
+## 规则从哪来
 
-这些指南**偏向谨慎而非速度**。它们设计用于：
-- 非琐碎功能
-- 生产系统
-- 需长期维护的代码
-- 多人协作项目
+1. **9 条认知公理**：熵增、还原论、概率与不确定性等
+2. **马斯克 5 步工程法**：质疑 → 删除 → 简化 → 加速 → 自动化
+3. **Karpathy 4 条编码原则**：先想再写、简单优先、外科手术式修改、目标驱动执行
 
-对于简单的拼写修复或单行修改，使用你的判断力。
+落到 Agent 身上，就是这几条：
 
-## Star 历史
+- **先质疑需求**，确认真要做再动手
+- **只改必须改的**，每一行改动都能对应到你的要求，不顺手"优化"旁边的代码
+- **每一步有验收标准**，做完自己检查
+- **数据不美化**：看不清的不猜，算的过程写出来，错了马上承认
+- **不确定就问**，不替你拍板
 
-如果这对你有帮助，请考虑给个 star ⭐
+## 6 个场景模板
 
-[![Star History Chart](https://api.star-history.com/svg?repos=AIPMAndy/AndySoul&type=Date)](https://star-history.com/#AIPMAndy/AndySoul&Date)
+[TEMPLATES.md](./TEMPLATES.md) 里按场景准备好了：极简版、全栈版、数据密集型、创业 MVP 等。保留适合你的部分，再加上你自己的技术栈、项目规则、团队 git 习惯和领域知识。
+
+## 适合谁
+
+- 希望 AI Agent 少出错、推理过程透明
+- 在乎改动小而准
+- 做的项目对数据准确性要求高
+
+**它不包含**项目脚手架、CI/CD、技术栈，也替代不了你项目自己的规则。
+
+**取舍**：这套规则偏谨慎，适合正式功能、生产系统、长期维护和多人协作的代码。改个错别字这类小事，按你的判断来。
 
 ## 社区
 
-- **分享成功案例**：[使用此模板](./.github/ISSUE_TEMPLATE/success_story.md)
-- **报告问题**：[Bug 报告模板](./.github/ISSUE_TEMPLATE/bug_report.md)
-- **建议改进**：[改进建议模板](./.github/ISSUE_TEMPLATE/improvement.md)
+- 分享你的使用效果：[成功案例模板](./.github/ISSUE_TEMPLATE/success_story.md)
+- 报告问题：[Bug 模板](./.github/ISSUE_TEMPLATE/bug_report.md)
+- 提改进建议：[改进模板](./.github/ISSUE_TEMPLATE/improvement.md)
+
+这是一份持续更新的文档。欢迎提 Issue 说说你的场景、哪些有效哪些没用，或直接发 PR。
 
 ## 相关工作
 
-- **Karpathy 的观察**：[关于 LLM 编码错误的推文](https://x.com/karpathy/status/2015883857489522876)
-- **马斯克的工程方法论**：来自 SpaceX/Tesla 制造的第一性原理思维
-- **BMAD-METHOD**：完整的 SDLC 工作流（PM → 架构师 → 开发 → QA）
-- **claude-code-bmad-foundation**：结合 Karpathy + BMAD 的模板
+- Karpathy：[关于 LLM 编码常见错误的推文](https://x.com/karpathy/status/2015883857489522876)
+- 马斯克的工程方法：来自 SpaceX / Tesla 制造的第一性原理思维
+- BMAD-METHOD：完整的研发流程（PM → 架构 → 开发 → QA）
+- claude-code-bmad-foundation：结合 Karpathy 和 BMAD 的模板
 
-## 贡献
+[![Star History Chart](https://api.star-history.com/svg?repos=AIPMAndy/AndySoul&type=Date)](https://star-history.com/#AIPMAndy/AndySoul&Date)
 
-这是一个活文档。如果你发现改进点：
-1. 开 issue 说明你的使用场景
-2. 分享什么有效、什么无效
-3. 用清晰的推理提出补充
+## 作者
+
+**AI 酋长 Andy**，前腾讯 / 百度 AI 产品专家、大模型独角兽 VP。也写了 [DNA Memory](https://github.com/AIPMAndy/dna-memory)（多个 Agent 共用的本地记忆层）和 [Grok Bot 中文攻略](https://aipmandy.github.io/grok-bot-handbook/)。
+
+想交流 Agent 技术和落地：微信 **`AIPMAndy`**（备注「AndySoul」）· [X @AIPMAndy](https://x.com/AIPMAndy) · [Telegram @AIPMAndy](https://t.me/AIPMAndy) · [个人官网](https://metaver.vip/)
 
 ## 许可证
 
-MIT - 自由使用、修改，无需署名。
+MIT，可自由使用、修改，无需署名。与 Anthropic、OpenAI、Cursor 或任何 AI 公司无关。
 
-## 致谢
-
-- **Andrej Karpathy**：揭示常见 LLM 编码失败模式
-- **Elon Musk**：5 步工程方法论
-- **第一性原理思考者**：认知基础
-
----
-
-**与 Anthropic、OpenAI、Cursor 或任何 AI 公司无关。**  
-只是一个开发者让 AI 编码 Agent 更系统可靠的尝试。
-
-## 支持项目
-
-如果你觉得有价值：
-- ⭐ 给仓库点星
-- 🐦 在 [Twitter/X](https://twitter.com/intent/tweet?text=推荐%20AndySoul%20-%20适用于%20AI%20编码%20Agent（Claude、Codex、Cursor）的通用指令%20-%20结合认知公理、马斯克方法论和%20Karpathy%20原则&url=https://github.com/AIPMAndy/AndySoul) 分享
-- 💬 在 Issues 分享你的成功案例
-- 🤝 通过 PR 贡献改进
+如果对你有用，点个 Star，或在 [X 上分享](https://twitter.com/intent/tweet?text=推荐%20AndySoul%20-%20适用于%20AI%20编码%20Agent（Claude、Codex、Cursor）的通用指令%20-%20结合认知公理、马斯克方法论和%20Karpathy%20原则&url=https://github.com/AIPMAndy/AndySoul)。
