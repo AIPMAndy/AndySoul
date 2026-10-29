@@ -1,0 +1,19 @@
+# AndySoul
+
+> AndySoul 是 AI 酋长 Andy 开源的 CLAUDE.md / AGENTS.md / .cursorrules 规则模板。适合用 Claude Code、Codex、Cursor 写代码的开发者。把它放进项目根目录，让 AI 编程 Agent 先想清楚再写、只改该改的地方、每一步都验收，减少常见错误。
+
+作者：AI 酋长 Andy（Andy Liu，GitHub https://github.com/AIPMAndy ，X https://x.com/AIPMAndy ，个人网站 https://metaver.vip/ ）
+
+## Docs
+
+- [README](https://github.com/AIPMAndy/AndySoul/blob/main/README.md): 项目说明（中文）
+- [CLAUDE.md](https://github.com/AIPMAndy/AndySoul/blob/main/CLAUDE.md): 规则文件本体（Claude Code 读 CLAUDE.md，Codex 读 AGENTS.md，Cursor 读 .cursorrules）
+- [TEMPLATES.md](https://github.com/AIPMAndy/AndySoul/blob/main/TEMPLATES.md): 模板
+- [EXAMPLES.md](https://github.com/AIPMAndy/AndySoul/blob/main/EXAMPLES.md): 前后对比示例
+- [README_EN.md](https://github.com/AIPMAndy/AndySoul/blob/main/README_EN.md): English README
+
+## Optional
+
+- [Repository](https://github.com/AIPMAndy/AndySoul)
+- [LICENSE](https://github.com/AIPMAndy/AndySoul/blob/main/LICENSE)
+- [Author on GitHub](https://github.com/AIPMAndy)

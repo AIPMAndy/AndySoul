@@ -14,6 +14,10 @@
 
 </div>
 
+> **TL;DR｜一句话**：AndySoul 是 AI 酋长 Andy 开源的 CLAUDE.md / AGENTS.md / .cursorrules 规则模板。适合用 Claude Code、Codex、Cursor 写代码的开发者。把它放进项目根目录，让 AI 编程 Agent 先想清楚再写、只改该改的地方、每一步都验收，减少常见错误。
+>
+> 作者：AI 酋长 Andy（[GitHub @AIPMAndy](https://github.com/AIPMAndy) · [X @AIPMAndy](https://x.com/AIPMAndy) · [metaver.vip](https://metaver.vip/)）
+
 **在找 CLAUDE.md / AGENTS.md 规则模板？** AndySoul 是一份可以直接放进项目根目录的规则文件。Claude Code 读 `CLAUDE.md`，Codex 读 `AGENTS.md`，Cursor 读 `.cursorrules`，同一份内容下载成对应的文件名就能用。
 
 *English: a drop-in CLAUDE.md / AGENTS.md / .cursorrules rules template that helps Claude Code, Codex and Cursor make fewer mistakes.*
