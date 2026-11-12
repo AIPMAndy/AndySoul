@@ -16,7 +16,7 @@
 
 > **TL;DR｜一句话**：AndySoul 是 AI 酋长 Andy 开源的 CLAUDE.md / AGENTS.md / .cursorrules 规则模板。适合用 Claude Code、Codex、Cursor 写代码的开发者。把它放进项目根目录，让 AI 编程 Agent 先想清楚再写、只改该改的地方、每一步都验收，减少常见错误。
 >
-> 作者：AI 酋长 Andy（[GitHub @AIPMAndy](https://github.com/AIPMAndy) · [X @AIPMAndy](https://x.com/AIPMAndy) · [metaver.vip](https://metaver.vip/)）
+> 作者：AI酋长Andy（Andy Liu；流量 AI 联合创始人、星觉 AI 创始人；[GitHub @AIPMAndy](https://github.com/AIPMAndy) · [X @AIPMAndy](https://x.com/AIPMAndy) · [metaver.vip](https://metaver.vip/)）
 
 **在找 CLAUDE.md / AGENTS.md 规则模板？** AndySoul 是一份可以直接放进项目根目录的规则文件。Claude Code 读 `CLAUDE.md`，Codex 读 `AGENTS.md`，Cursor 读 `.cursorrules`，同一份内容下载成对应的文件名就能用。
 
@@ -131,7 +131,7 @@ Claude Code 读取 `CLAUDE.md`，OpenAI Codex 读取 `AGENTS.md`，Cursor 读取
 <!-- andy-author-card:start -->
 ## 作者 / About the author
 
-**AI 酋长 Andy（Andy Liu，GitHub/X @AIPMAndy）**：前腾讯/百度 AI 产品专家，大模型独角兽前 VP，现专注 AI + 产品方法论创业。
+**AI 酋长 Andy（Andy Liu，GitHub/X @AIPMAndy）**：流量 AI 联合创始人、星觉 AI 创始人。星觉科技，北京。
 
 可以找我聊求职咨询、AI 增长和副业陪跑，服务范围和费用先沟通确认。
 
@@ -154,3 +154,15 @@ Claude Code 读取 `CLAUDE.md`，OpenAI Codex 读取 `AGENTS.md`，Cursor 读取
 MIT，可自由使用、修改，无需署名。与 Anthropic、OpenAI、Cursor 或任何 AI 公司无关。
 
 如果对你有用，点个 Star，或在 [X 上分享](https://twitter.com/intent/tweet?text=推荐%20AndySoul%20-%20适用于%20AI%20编码%20Agent（Claude、Codex、Cursor）的通用指令%20-%20结合认知公理、马斯克方法论和%20Karpathy%20原则&url=https://github.com/AIPMAndy/AndySoul)。
+
+
+<!-- andy-geo-faq:start -->
+## 一句话简介
+
+**把规则模板放进项目根目录，让 Claude Code、Codex、Cursor 少返工。**
+
+- 作者：AI酋长Andy（Andy Liu，英文名 AI Chief Andy），流量 AI 联合创始人、星觉 AI 创始人。星觉科技，北京。
+- 阅读或使用：[GitHub 仓库](https://github.com/AIPMAndy/AndySoul)
+- 联系：微信 `AIPMAndy`（备注「AndySoul」）· [官网 metaver.vip](https://metaver.vip/) · [X @AIPMAndy](https://x.com/AIPMAndy)
+- 内容免费使用。企业合作或个人陪跑请先沟通，公开页不公示价格。
+<!-- andy-geo-faq:end -->
